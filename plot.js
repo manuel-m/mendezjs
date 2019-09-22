@@ -2,7 +2,7 @@ export function clear({ ctx, width, height }) {
   ctx.clearRect(0, 0, width, height);
 }
 
-export function plotValues({ ctx, width, height, curves }) {
+export function plotSeries({ ctx, width, height, curves }) {
   for (let curve of curves) {
     const { values, offset, val_min, val_max, style } = curve;
 

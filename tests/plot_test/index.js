@@ -2,12 +2,12 @@
 
 // http://localhost:9000/index.html
 
-import { plotValues } from '../../plot';
+import { plotSeries } from '../../plot';
 
 const canvas = document.getElementById('graph_curve');
 const ctx = canvas.getContext('2d');
 
-plotValues({
+plotSeries({
   ctx,
   width: canvas.width,
   height: canvas.height,
@@ -41,7 +41,7 @@ plotValues({
       val_min: -200,
       val_max: 200,
       style: {
-        strokeStyle: '#008800',
+        strokeStyle: '#00aa00',
         lineWidth: 1,
         shadowColor: '#000000',
         shadowBlur: 0,

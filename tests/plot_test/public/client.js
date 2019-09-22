@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  function plotValues({ ctx, width, height, curves }) {
+  function plotSeries({ ctx, width, height, curves }) {
     for (let curve of curves) {
       const { values, offset, val_min, val_max, style } = curve;
 
@@ -38,7 +38,7 @@
   const canvas = document.getElementById('graph_curve');
   const ctx = canvas.getContext('2d');
 
-  plotValues({
+  plotSeries({
     ctx,
     width: canvas.width,
     height: canvas.height,
@@ -72,7 +72,7 @@
         val_min: -200,
         val_max: 200,
         style: {
-          strokeStyle: '#008800',
+          strokeStyle: '#00aa00',
           lineWidth: 1,
           shadowColor: '#000000',
           shadowBlur: 0,
