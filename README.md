@@ -1,11 +1,29 @@
 # mendezjs
 
-Du grand Mendez
+A collection of tools to make `du grand Mendez`.
 
-## `parallelize(items, fn, size = 10)` 
+## `rollup-inferno-babel` 
+Minimal frontend boilerplate inspired by the [SAM pattern](https://sam.js.org/)
 
 ```
-Run up to size  callbacks in parallel `à la Mendez`
+cd rollup-inferno-babel
+npm i
+npm run build
+
+# version for current browser 
+rollup-inferno-babel/public/js/app.bundle.js
+
+# version for legacy browser (ie11)
+rollup-inferno-babel/public/js/app.bundle.legacy.js
+
+# start convenience web server
+npm run
+```
+
+
+## `parallelize(items, fn, size = 10)` 
+```
+Run up to size callbacks in parallel `à la Mendez`
 ```
 
 ## `plotSeries(...)`
@@ -13,3 +31,4 @@ Run up to size  callbacks in parallel `à la Mendez`
 ```
 Display time series data with canvas
 ```
+
