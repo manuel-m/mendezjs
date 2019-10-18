@@ -17,7 +17,7 @@ rollup-inferno-babel/public/js/app.bundle.js
 rollup-inferno-babel/public/js/app.bundle.legacy.js
 
 # start convenience web server
-npm run
+npm start
 ```
 
 
