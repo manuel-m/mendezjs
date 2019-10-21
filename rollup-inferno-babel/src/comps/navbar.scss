@@ -1,0 +1,36 @@
+.nav {
+  margin-bottom: 1rem;
+}
+
+.line:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.line__left {
+  float: left;
+}
+
+.line__right {
+  float: right;
+}
+
+.nav__item {
+  padding: 1rem;
+  line-height: 3.4rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.toolbar__item {
+  padding: 0.4rem;
+  cursor: pointer;
+  background-color: #455a64;
+  border-radius: 2px;
+}
+
+.nav__item.selected {
+  color: #212121;
+  background-color: #cfd8dc;
+}

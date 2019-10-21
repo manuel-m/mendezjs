@@ -6,6 +6,8 @@ import shared from './shared';
 import Login from './comps/login.comp';
 import Nav from './comps/navbar.comp';
 
+import './style/index.scss';
+
 // [!] need a class to store app state
 class Root extends Component {
   constructor(props) {

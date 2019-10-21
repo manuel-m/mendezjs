@@ -1,5 +1,7 @@
 import shared from '../shared';
 
+import './robots.scss';
+
 export default function robots(props) {
   return (
     <div class="robots-list">

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "rollup -wc",
     "build": "cross-env NODE_ENV=production rollup -c",
-    "start": "cd public && browser-sync start --server --port 6600",
+    "start": "cd public && browser-sync start --server --files 'app.bundle.js' --files 'app.bundle.css' --port 6600",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

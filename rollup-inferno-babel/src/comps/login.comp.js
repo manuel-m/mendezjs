@@ -1,3 +1,5 @@
+import './login.scss';
+
 import action from '../action';
 
 export default function Login() {

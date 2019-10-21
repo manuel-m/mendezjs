@@ -4,6 +4,7 @@ import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import prettier from 'rollup-plugin-prettier';
 import resolve from 'rollup-plugin-node-resolve';
+import sass from 'rollup-plugin-sass';
 import { terser } from 'rollup-plugin-terser';
 
 export default ['current', 'legacy'].map(bundle);
@@ -12,11 +13,12 @@ function bundle(target) {
   return {
     input: 'src/index.js',
     output: {
-      file: `public/js/app.bundle${target === 'legacy' ? '.legacy' : ''}.js`,
+      file: `public/app.bundle${target === 'legacy' ? '.legacy' : ''}.js`,
       format: 'iife',
       interop: false,
     },
     plugins: [
+      sass({ output: 'public/app.bundle.css' }),
       replace({
         'process.env.NODE_ENV': JSON.stringify('production'),
       }),

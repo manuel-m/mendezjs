@@ -1,0 +1,22 @@
+form.auth {
+  width: 300px;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 2px;
+}
+
+form.auth input[type='text'] {
+  margin-top: 0.5rem;
+}
+
+form.auth input[type='text'],
+form.auth input[type='password'] {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form.auth input[type='submit'] {
+  margin-top: 10px;
+  padding: 5px 30px;
+}

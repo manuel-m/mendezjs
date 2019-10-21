@@ -1,0 +1,16 @@
+.robots-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.robot-line {
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.robot-line:after {
+  content: '';
+  display: block;
+  clear: both;
+}
